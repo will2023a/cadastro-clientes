@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: linear-gradient(to right, #ff4b1f, #ff9068);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container{
+    text-align: center;
+    
+}
+.header h1 {
+    font-size: 36px;
+    margin: 0;
+    animation: moveText 2s infinite alternate;
+
+}
+
+@keyframes moveText {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+.header {
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradiente de laranja */
+    color: white; /* Texto branco para contrastar */
+}
+.footer {
+    animation: rotate 5s infinite; /* Roda infinitamente em 5 segundos */
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.footer a:hover {
+    color: #ff7e5f; /* Muda a cor do texto para laranja ao passar o mouse */
+}
+.content {
+    animation: slide-up 1s ease-out; /* Desliza para cima em 1 segundo */
+}
+
+@keyframes slide-up {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(0); }
+}
